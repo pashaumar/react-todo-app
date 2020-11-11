@@ -6,10 +6,12 @@ function Form({ inputText, setInputText, todos, setTodos }) {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
-      { text: inputText, completed: false, id: todos.length + 1 },
-    ]);
+    if (inputText !== "") {
+      setTodos([
+        ...todos,
+        { text: inputText, completed: false, id: todos.length + 1 },
+      ]);
+    }
     setInputText("");
   };
 
