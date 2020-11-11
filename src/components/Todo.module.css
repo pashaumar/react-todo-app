@@ -1,0 +1,46 @@
+.todoContainer {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+.list {
+  width: 80%;
+  background-color: white;
+  padding: 5px 10px;
+}
+.done,
+.trash {
+  width: 5%;
+  margin: 0 10px;
+}
+.done {
+  /* background-color: white; */
+  color: antiquewhite;
+  cursor: pointer;
+}
+.trash {
+  /* background-color: white; */
+  color: rgba(202, 211, 200, 0.8);
+  cursor: pointer;
+}
+.done i,
+.trash i {
+  font-size: 2rem;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+@media screen and (max-width: 425px) {
+  .list {
+    padding: 0 5px;
+  }
+  .done,
+  .trash {
+    margin: 0 8px;
+  }
+  .done i,
+  .trash i {
+    font-size: 1.5rem;
+  }
+}
