@@ -44,3 +44,16 @@
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .list {
+    padding: 2px 5px;
+  }
+  .done,
+  .trash {
+    margin: 0 8px;
+  }
+  .done i,
+  .trash i {
+    font-size: 1.5rem;
+  }
+}
